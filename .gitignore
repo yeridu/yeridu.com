@@ -9,8 +9,7 @@
 /public/
 /resources/_gen/
 
-# Hugo module cache
-/go.sum
+# Hugo module cache (go.sum is needed for builds - don't ignore it!)
 /.hugo_build.lock
 
 # OS-generated files
@@ -44,3 +43,8 @@ npm-debug.log*
 # Claude Code temporary files
 tmpclaude-*
 nul
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
