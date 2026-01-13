@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Academic website for Mario Morales",
   "scripts": {
-    "build": "hugo --minify",
-    "dev": "hugo server -D"
+    "build": "npx hugo-extended --minify"
+  },
+  "dependencies": {
+    "hugo-extended": "0.139.0"
   }
 }
