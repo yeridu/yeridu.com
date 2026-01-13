@@ -1,0 +1,16 @@
+# =============================================================================
+# HUGO MODULE CONFIGURATION
+# =============================================================================
+# This file tells Hugo which modules (themes/plugins) to import.
+# The ORDER matters! blox-core must come before blox-bootstrap.
+# =============================================================================
+
+# Import Hugo Blox modules in dependency order
+[[imports]]
+  path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-core"
+
+[[imports]]
+  path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5"
+
+[[imports]]
+  path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-seo"

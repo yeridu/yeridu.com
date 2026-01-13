@@ -19,15 +19,7 @@ baseURL = "https://yeridu.com/"
 # Your site title - appears in browser tab and search results
 title = "Mario Morales | University of Arizona"
 
-# Module imports (replaces old "theme" directive)
-# Hugo Blox requires explicit module imports to work correctly
-[module]
-  [[module.imports]]
-    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-core"
-  [[module.imports]]
-    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5"
-  [[module.imports]]
-    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-seo"
+# Module imports are in config/_default/module.toml
 
 # Language settings
 languageCode = "en-us"
