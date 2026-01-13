@@ -19,8 +19,15 @@ baseURL = "https://yeridu.com/"
 # Your site title - appears in browser tab and search results
 title = "Mario Morales | University of Arizona"
 
-# The theme we're using - HugoBlox Academic is perfect for researchers
-theme = "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5"
+# Module imports (replaces old "theme" directive)
+# Hugo Blox requires explicit module imports to work correctly
+[module]
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-core"
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5"
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-seo"
 
 # Language settings
 languageCode = "en-us"
