@@ -1,0 +1,127 @@
+# =============================================================================
+# SITE PARAMETERS CONFIGURATION
+# =============================================================================
+# This file controls HOW your site looks and behaves.
+# Think of hugo.toml as "what" and params.toml as "how".
+#
+# IMPORTANT: This file uses TOML format
+# - Strings use quotes: key = "value"
+# - Booleans don't use quotes: key = true
+# - Lists use brackets: key = ["item1", "item2"]
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# SITE APPEARANCE
+# -----------------------------------------------------------------------------
+
+# Color theme: Using minimal for clean, professional look
+theme = "minimal"
+
+# Day/night mode: 1 = Light (always), 2 = Dark, 3 = Auto
+# Using Light mode for white background with black text
+day_night = 1
+
+# Font style: "native" uses system fonts (fast), or try "minimal", "classic"
+font = "minimal"
+
+# Font size: "S", "M", "L", or "XL"
+font_size = "M"
+
+# -----------------------------------------------------------------------------
+# SEO & SOCIAL SHARING
+# -----------------------------------------------------------------------------
+# This information appears when your site is shared on social media
+
+[marketing]
+  [marketing.seo]
+    # Site name for search engines
+    site_name = "Mario Morales - Health Behavior Researcher"
+    # Brief description for search results (keep under 160 characters)
+    description = "PhD Candidate studying violence prevention, substance use, and mental health among adolescents using mixed methods across US, Mexico, and Belize."
+
+  [marketing.analytics]
+    # TODO(MARIO): Add Google Analytics ID if you want to track visitors
+    # google_analytics = "G-XXXXXXXXXX"
+
+# -----------------------------------------------------------------------------
+# SITE HEADER CONFIGURATION
+# -----------------------------------------------------------------------------
+[header]
+  [header.navbar]
+    enable = true
+
+# -----------------------------------------------------------------------------
+# SITE FOOTER CONFIGURATION
+# -----------------------------------------------------------------------------
+[footer]
+  # Show "Powered by Hugo" (you can set to false to hide)
+  show_credits = true
+  [footer.copyright]
+    notice = "© {year} Mario Morales. All rights reserved."
+
+# -----------------------------------------------------------------------------
+# LOCALIZATION
+# -----------------------------------------------------------------------------
+[locale]
+  date_format = "Jan 2, 2006"
+  time_format = "3:04 PM"
+
+# -----------------------------------------------------------------------------
+# SITE FEATURES
+# -----------------------------------------------------------------------------
+[features]
+  # Enable syntax highlighting for code blocks
+  [features.syntax_highlighter]
+    enable = true
+    theme = "github-light"
+
+  # Enable math rendering (useful for equations)
+  [features.math]
+    enable = false
+
+  # Enable diagrams (mermaid)
+  [features.diagram]
+    enable = false
+
+  # Enable privacy-respecting analytics
+  privacy_pack = true
+
+# -----------------------------------------------------------------------------
+# COMMENTS (Optional - disabled by default)
+# -----------------------------------------------------------------------------
+# [comments]
+#   provider = ""
+
+# -----------------------------------------------------------------------------
+# SEARCH
+# -----------------------------------------------------------------------------
+[search]
+  # Enable search functionality
+  provider = "wowchemy"
+
+# -----------------------------------------------------------------------------
+# MAPS (for contact page)
+# -----------------------------------------------------------------------------
+# TODO(MARIO): Add your Mapbox API key if you want an interactive map
+# [map]
+#   provider = "mapbox"
+#   api_key = ""
+#   zoom = 15
+
+# -----------------------------------------------------------------------------
+# CMS (Content Management System)
+# -----------------------------------------------------------------------------
+# This allows editing content through a web interface
+[cms]
+  # Netlify CMS - disabled by default for GitHub Pages
+  netlify_cms = false
+
+# -----------------------------------------------------------------------------
+# ICON PACK CONFIGURATION
+# -----------------------------------------------------------------------------
+# Which icon sets to load (affects page speed)
+[icon.pack]
+  ai = true      # Academic Icons (ResearchGate, Google Scholar, etc.)
+  fab = true     # Font Awesome Brands (Twitter, GitHub, etc.)
+  fas = true     # Font Awesome Solid (email, phone, etc.)
+  far = false    # Font Awesome Regular (optional, not needed)

@@ -1,0 +1,46 @@
+# =============================================================================
+# GIT IGNORE FILE
+# =============================================================================
+# This file tells Git which files/folders to ignore (not track).
+# Files listed here won't be uploaded to GitHub.
+# =============================================================================
+
+# Hugo build output (generated files - don't commit these)
+/public/
+/resources/_gen/
+
+# Hugo module cache
+/go.sum
+/.hugo_build.lock
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using any npm packages)
+node_modules/
+
+# Environment variables (NEVER commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Claude Code temporary files
+tmpclaude-*
+nul

@@ -1,0 +1,37 @@
+// =============================================================================
+// CUSTOM STYLES FOR MARIO MORALES WEBSITE
+// =============================================================================
+
+// Turquoise blue color for navbar, footer, and box borders
+$turquoise-blue: #40E0D0;
+
+// Orange color for headings
+$heading-orange: #c65d3b;
+
+// =============================================================================
+// NAVBAR STYLING
+// =============================================================================
+.navbar {
+  border-bottom: 3px solid $turquoise-blue !important;
+}
+
+// =============================================================================
+// FOOTER STYLING
+// =============================================================================
+footer.site-footer {
+  border-top: 3px solid $turquoise-blue !important;
+}
+
+.powered-by {
+  border-top: none;
+}
+
+// =============================================================================
+// BOX STYLING - Turquoise thin frames for all content boxes
+// =============================================================================
+// This targets boxes in the content sections
+.card,
+.publication-card,
+.experience-card {
+  border: 1px solid $turquoise-blue !important;
+}

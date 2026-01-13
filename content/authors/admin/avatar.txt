@@ -1,0 +1,17 @@
+TODO(MARIO): Replace this file with your profile photo!
+
+Instructions:
+1. Choose a professional headshot photo (ideally 400x400 pixels or larger)
+2. Name the file "avatar.jpg" (or "avatar.png")
+3. Place it in this folder (content/authors/admin/)
+4. Delete this avatar.txt file
+
+Tips for a good academic profile photo:
+- Professional but approachable
+- Good lighting (natural light is best)
+- Simple background
+- Shoulders and head visible
+- Dress professionally
+- Genuine smile
+
+The photo will automatically appear on your homepage and author boxes.

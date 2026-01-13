@@ -1,0 +1,142 @@
+# =============================================================================
+# HUGO CONFIGURATION FILE
+# =============================================================================
+# This is the MAIN configuration file for your Hugo website.
+# Think of it as the "control center" that tells Hugo how to build your site.
+#
+# WHAT EACH SECTION DOES:
+# - baseURL: Where your site will live on the internet
+# - title: Your site's name (appears in browser tabs)
+# - theme: Which design template to use
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# BASIC SITE SETTINGS
+# -----------------------------------------------------------------------------
+# Your live website URL (yeridu.com hosted on Cloudflare Pages)
+baseURL = "https://yeridu.com/"
+
+# Your site title - appears in browser tab and search results
+title = "Mario Morales | University of Arizona"
+
+# The theme we're using - HugoBlox Academic is perfect for researchers
+theme = "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5"
+
+# Language settings
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+# How many items to show per page (for blog posts, publications, etc.)
+[pagination]
+pagerSize = 10
+
+# Enable special characters in URLs (important for academic titles)
+removePathAccents = true
+
+# -----------------------------------------------------------------------------
+# MARKDOWN RENDERING SETTINGS
+# -----------------------------------------------------------------------------
+# These settings control how your Markdown files are converted to HTML
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Allow raw HTML in Markdown files (needed for embeds)
+      unsafe = true
+  [markup.highlight]
+    # Syntax highlighting style for code blocks
+    style = "github"
+  [markup.tableOfContents]
+    # Table of contents settings for long pages
+    startLevel = 2
+    endLevel = 3
+
+# -----------------------------------------------------------------------------
+# MENU CONFIGURATION
+# -----------------------------------------------------------------------------
+# This defines the navigation menu at the top of your site
+# Each [[menu.main]] entry creates one menu item
+#
+# - name: What users see
+# - url: Where clicking takes them (# means same page section)
+# - weight: Order (lower numbers appear first)
+# -----------------------------------------------------------------------------
+
+[[menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 10
+
+[[menu.main]]
+  name = "Research"
+  url = "#research"
+  weight = 20
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 30
+
+[[menu.main]]
+  name = "Journey"
+  url = "#experience"
+  weight = 40
+
+[[menu.main]]
+  name = "Forthcoming"
+  url = "#fieldwork"
+  weight = 50
+
+[[menu.main]]
+  name = "Project"
+  url = "#teaching"
+  weight = 60
+
+[[menu.main]]
+  name = "Blog"
+  url = "#blog"
+  weight = 65
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 70
+
+# -----------------------------------------------------------------------------
+# TAXONOMIES (Categories and Tags)
+# -----------------------------------------------------------------------------
+# These let you organize and filter your content
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+
+# -----------------------------------------------------------------------------
+# RELATED CONTENT SETTINGS
+# -----------------------------------------------------------------------------
+# Hugo can suggest related publications/posts based on tags
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 70
+
+# -----------------------------------------------------------------------------
+# OUTPUT FORMATS
+# -----------------------------------------------------------------------------
+# Tells Hugo what types of files to generate
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+# -----------------------------------------------------------------------------
+# SECURITY SETTINGS
+# -----------------------------------------------------------------------------
+# Allow the theme to access environment variables it needs
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^WC_']
